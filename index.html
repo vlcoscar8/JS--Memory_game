@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./app/styles/exercise-1.css" />
+        <script src="./app/index.js" defer></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Hubballi&family=Nunito:wght@200;300;400;500;700&family=Red+Hat+Mono:wght@300;400;500&family=Roboto:wght@100;300&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <section class="game-counter">
+            <div class="game-counter__container">
+                <h3 class="score-container__text">
+                    Pairs matched <span data-function="score">0</span
+                    ><span>/6</span>
+                </h3>
+                <div class="score-container__progress">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="game-counter__container">
+                <h3 class="game-counter__attemps">
+                    Total attemps <span data-function="attempts">0</span>
+                </h3>
+            </div>
+        </section>
+        <section class="game-container">
+            <div data-function="grid" class="b-grid" id="container"></div>
+        </section>
+        <section>
+            <button id="start-game" class="btn-new">New game</button>
+        </section>
+    </body>
+</html>
